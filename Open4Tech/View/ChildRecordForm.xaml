@@ -1,0 +1,258 @@
+﻿<UserControl 
+            x:Class="KidsVaccineReminder.View.ChildRecordForm"             
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:local="clr-namespace:KidsVaccineReminder.View"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/Login.png" Stretch="UniformToFill" />
+        </Grid.Background>
+        <Label Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Padding="10" Grid.ColumnSpan="2" FontSize="24">Please enter child record</Label>
+        <TextBox
+            x:Name="EPICenterName"
+            Grid.Column="0"
+            Grid.Row="1"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.EPICenterName}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">E.P.I Center Name</TextBlock>
+            </materialDesign:HintAssist.Hint>
+        </TextBox>
+        <TextBox
+            x:Name="DoctorName"
+             Grid.Column="1"
+            Grid.Row="1"
+            Width="350"
+            Height="40"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.DoctorName}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Doctor Name</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="DoctorPhoneNumber"
+            Grid.Column="0"
+            Grid.Row="2"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.DoctorPhoneNumber}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Doctor Phone Number</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="CardNo"
+            Grid.Column="1"
+            Grid.Row="2"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.CardNo}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Card No/QR Code</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="ChildName"
+            Grid.Column="0"
+            Grid.Row="3"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.ChildName}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Child Name</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="Gender"
+            Grid.Column="1"
+            Grid.Row="3"
+            Width="350"
+            Height="40"
+            Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.Gender}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Gender</TextBlock>
+            </materialDesign:HintAssist.Hint>
+        </TextBox>
+        <TextBox
+            x:Name="MotherName"
+            Grid.Column="0"
+            Grid.Row="4"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.MotherName}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Mother Name</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="FatherName"
+            Grid.Column="1"
+            Grid.Row="4"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.FatherName}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Father Name</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="FatherCNIC"
+            Grid.Column="0"
+            Grid.Row="5"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.FatherCNIC}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Father/Guardian CNIC</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <TextBox
+            x:Name="FatherPhoneNumber"
+            Grid.Column="1"
+            Grid.Row="5"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.FatherPhoneNumber}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Father/Guardia Phon</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <DatePicker
+            x:Name="ChildDOB"
+            Grid.Column="0"
+            Grid.Row="6"
+            Width="350"
+            Height="40"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            SelectedDate="{Binding Path=ChildRecord.ChildDOB}">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">Child Date of Birth</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </DatePicker>
+        <TextBox
+            x:Name="District"
+            Grid.Column="1"
+            Grid.Row="6"
+            Width="350"
+            Height="40"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="White"
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding Path=ChildRecord.District}"
+            TextWrapping="Wrap">
+            <materialDesign:HintAssist.Hint>
+                <TextBlock Foreground="White">District/Tehsil/Taluka/UC</TextBlock>
+            </materialDesign:HintAssist.Hint>
+
+        </TextBox>
+        <Button Grid.Row="7" Width="100" Grid.Column="1" Command="{Binding SaveCommand}" Margin="180,12.4,120,11.6">Save</Button>
+        <Button Grid.Row="7" Width="100" Grid.Column="1" Command="{Binding GoHomeCommand}" Margin="296,10.4,4,13.6" >Cancel</Button>
+
+    </Grid>
+</UserControl>
