@@ -92,6 +92,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BackgroundThread\BackgroundThread.cs" />
     <Compile Include="Common\ExtensionMethods.cs" />
     <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="DatabaseContext\AppDbContext.cs" />

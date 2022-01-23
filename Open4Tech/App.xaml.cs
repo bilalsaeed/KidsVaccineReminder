@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-
+using KidsVaccineReminder.BackgroundThread;
 namespace KidsVaccineReminder
 {
     /// <summary>
@@ -13,6 +13,10 @@ namespace KidsVaccineReminder
     /// </summary>
     public partial class App : Application
     {
-
+        BackgroundSendMessage bgThread = new BackgroundSendMessage();
+        App()
+        {
+            bgThread.Start();
+        }
     }
 }
