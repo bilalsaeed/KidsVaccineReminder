@@ -169,6 +169,6 @@
     <value>..\..\TxtFile\text.txt</value>
   </data>
   <data name="VaccineView" xml:space="preserve">
-    <value>KidsVaccineReminder.View.VaccineView</value>
+    <value>KidsVaccineReminder.View.ChildVaccineRecords</value>
   </data>
 </root>

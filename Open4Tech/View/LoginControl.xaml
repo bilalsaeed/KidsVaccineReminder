@@ -32,7 +32,6 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="20"
-            Foreground="White"
             Text="Login to use Kids Vaccine Reminder"
             TextAlignment="Center"
             TextWrapping="Wrap" />
@@ -50,19 +49,19 @@
             x:Name="Email"
             Grid.Row="2"
             Width="430"
-            Height="40"
+            Height="50"
             Margin="0,20,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
             FontSize="18"
-            Foreground="White"
+            FontWeight="Bold"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Email"
             Text="{Binding Path=UserModel.Email}"
             TextWrapping="Wrap">
 
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Email</TextBlock>
-            </materialDesign:HintAssist.Hint>
+           
 
         </TextBox>
 
@@ -70,19 +69,14 @@
             Name="Password"
             Grid.Row="4"
             Width="430"
-            Height="40"
+            Height="50"
             Margin="0,20,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
             FontSize="18"
-            Foreground="White"
+            materialDesign:HintAssist.Hint="Password"
             PasswordChanged="Password_PasswordChanged">
-
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Password</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </PasswordBox>
 
         <Button

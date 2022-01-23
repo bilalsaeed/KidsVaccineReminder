@@ -25,8 +25,9 @@ namespace KidsVaccineReminder.Helper
             var newControl = Activator.CreateInstance(controlType) as UserControl;
             newControl.DataContext = viewModel;
             window.Content = newControl;
-
             return window;
         }
-  }
+
+        
+    }
 }

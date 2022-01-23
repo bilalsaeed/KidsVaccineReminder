@@ -10,17 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KidsVaccineReminder.View
+namespace KidsVaccineReminder.ViewModel
 {
     /// <summary>
-    /// Interaction logic for ChildRecordForm.xaml
+    /// Interaction logic for ChildVaccineRecords.xaml
     /// </summary>
-    public partial class VaccineView : UserControl
+    public partial class ChildVaccine : Window
     {
-        public VaccineView()
+        
+        public ChildVaccine()
         {
             InitializeComponent();
         }

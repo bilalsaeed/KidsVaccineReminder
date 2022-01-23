@@ -9,7 +9,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
@@ -25,43 +24,42 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="../Resources/Login.png" Stretch="UniformToFill" />
+            <ImageBrush Opacity="0.3" ImageSource="../Resources/Login.png" Stretch="UniformToFill" >
+            </ImageBrush>            
         </Grid.Background>
-        <Label Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Padding="10" Grid.ColumnSpan="2" FontSize="24">Please enter child record</Label>
+        <Label  Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Padding="10" Grid.ColumnSpan="2" FontSize="24">Please enter child record</Label>
         <TextBox
             x:Name="EPICenterName"
             Grid.Column="0"
             Grid.Row="1"
             Width="350"
-            Height="40"
-            
+            Height="50"            
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
             FontSize="18"
-            Foreground="White"
-            Text="{Binding Path=ChildRecord.EPICenterName}"
+            FontWeight="Bold"
+            Foreground="Purple"
+            materialDesign:HintAssist.Hint="E.P.I Center Name!"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            Text="{Binding Path=ChildRecord.EPICenterName, Mode=TwoWay}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">E.P.I Center Name</TextBlock>
-            </materialDesign:HintAssist.Hint>
         </TextBox>
         <TextBox
             x:Name="DoctorName"
              Grid.Column="1"
             Grid.Row="1"
             Width="350"
-            Height="40"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            
             Text="{Binding Path=ChildRecord.DoctorName}"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Doctor Name"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Doctor Name</TextBlock>
-            </materialDesign:HintAssist.Hint>
 
         </TextBox>
         <TextBox
@@ -69,18 +67,16 @@
             Grid.Column="0"
             Grid.Row="2"
             Width="350"
-            Height="40"
-            
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
             Text="{Binding Path=ChildRecord.DoctorPhoneNumber}"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Doctor Phone Number"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Doctor Phone Number</TextBlock>
-            </materialDesign:HintAssist.Hint>
+            
 
         </TextBox>
         <TextBox
@@ -88,18 +84,17 @@
             Grid.Column="1"
             Grid.Row="2"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Card No/QR Code"
             Text="{Binding Path=ChildRecord.CardNo}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Card No/QR Code</TextBlock>
-            </materialDesign:HintAssist.Hint>
+            
 
         </TextBox>
         <TextBox
@@ -107,18 +102,17 @@
             Grid.Column="0"
             Grid.Row="3"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Child Name"
             Text="{Binding Path=ChildRecord.ChildName}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Child Name</TextBlock>
-            </materialDesign:HintAssist.Hint>
+           
 
         </TextBox>
         <TextBox
@@ -126,130 +120,108 @@
             Grid.Column="1"
             Grid.Row="3"
             Width="350"
-            Height="40"
+            Height="50"
             Margin="0,20,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Gender"
             Text="{Binding Path=ChildRecord.Gender}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Gender</TextBlock>
-            </materialDesign:HintAssist.Hint>
         </TextBox>
         <TextBox
             x:Name="MotherName"
             Grid.Column="0"
             Grid.Row="4"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Mother Name"
             Text="{Binding Path=ChildRecord.MotherName}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Mother Name</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </TextBox>
         <TextBox
             x:Name="FatherName"
             Grid.Column="1"
             Grid.Row="4"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Father Name"
             Text="{Binding Path=ChildRecord.FatherName}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Father Name</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </TextBox>
         <TextBox
             x:Name="FatherCNIC"
             Grid.Column="0"
             Grid.Row="5"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Father/Guardian CNIC"
             Text="{Binding Path=ChildRecord.FatherCNIC}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Father/Guardian CNIC</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </TextBox>
         <TextBox
             x:Name="FatherPhoneNumber"
             Grid.Column="1"
             Grid.Row="5"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="Father/Guardian Ph"
             Text="{Binding Path=ChildRecord.FatherPhoneNumber}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Father/Guardia Phon</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </TextBox>
         <DatePicker
             x:Name="ChildDOB"
             Grid.Column="0"
             Grid.Row="6"
             Width="350"
-            Height="40"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
-            SelectedDate="{Binding Path=ChildRecord.ChildDOB}">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">Child Date of Birth</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            materialDesign:HintAssist.Hint="Child Date of Birth"
+            SelectedDate="{Binding Path=ChildRecord.ChildDOB}">            
         </DatePicker>
         <TextBox
             x:Name="District"
             Grid.Column="1"
             Grid.Row="6"
             Width="350"
-            Height="40"
+            Height="50"
             
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             BorderBrush="White"
-            FontSize="18"
-            Foreground="White"
+            FontSize="18" FontWeight="Bold"  Foreground="Purple"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            materialDesign:HintAssist.Hint="District/Tehsil/Taluka/UC"
             Text="{Binding Path=ChildRecord.District}"
             TextWrapping="Wrap">
-            <materialDesign:HintAssist.Hint>
-                <TextBlock Foreground="White">District/Tehsil/Taluka/UC</TextBlock>
-            </materialDesign:HintAssist.Hint>
-
         </TextBox>
         <Button Grid.Row="7" Width="100" Grid.Column="1" Command="{Binding SaveCommand}" Margin="180,12.4,120,11.6">Save</Button>
         <Button Grid.Row="7" Width="100" Grid.Column="1" Command="{Binding GoHomeCommand}" Margin="296,10.4,4,13.6" >Cancel</Button>

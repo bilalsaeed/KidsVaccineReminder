@@ -214,7 +214,7 @@ namespace KidsVaccineReminder.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KidsVaccineReminder.View.VaccineView.
+        ///   Looks up a localized string similar to KidsVaccineReminder.View.ChildVaccineRecords.
         /// </summary>
         internal static string VaccineView {
             get {

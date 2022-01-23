@@ -14,6 +14,7 @@ namespace KidsVaccineReminder.Repositories
         void Update(T obj);
         Task<List<T>> GetAll();
         Task<T> Get(Expression<Func<T, bool>> predicate);
-        void Save();
+        Task<List<T>> GetByCriteria(Expression<Func<T, bool>> predicate);
+        int Save();
     }
 }

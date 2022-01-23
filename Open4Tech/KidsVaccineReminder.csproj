@@ -39,9 +39,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -56,6 +53,9 @@
     </Reference>
     <Reference Include="MaterialDesignThemes.Wpf, Version=3.2.0.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.3.2.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmDialogs, Version=8.0.0.0, Culture=neutral, PublicKeyToken=3d3b9708589bc73e, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmDialogs.8.0.0\lib\net45\MvvmDialogs.dll</HintPath>
     </Reference>
     <Reference Include="SQLite.CodeFirst, Version=1.7.0.34, Culture=neutral, PublicKeyToken=eb96ba0a78d831a7, processorArchitecture=MSIL">
       <HintPath>..\packages\SQLite.CodeFirst.1.7.0.34\lib\net45\SQLite.CodeFirst.dll</HintPath>
@@ -92,13 +92,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\ExtensionMethods.cs" />
     <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="DatabaseContext\AppDbContext.cs" />
     <Compile Include="Data\ISpecification.cs" />
     <Compile Include="Data\UserSpecification\UserSpecification.cs" />
     <Compile Include="Helper\WindowManager.cs" />
     <Compile Include="Model\ChildRecord.cs" />
+    <Compile Include="Model\ChildVaccine.cs" />
     <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Repositories\Child\ChildRepository.cs" />
+    <Compile Include="Repositories\Child\ChildVaccineRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\UserRepository\UserRepository.cs" />
@@ -108,9 +112,9 @@
     <Compile Include="ViewModel\ChildRecordViewModel.cs" />
     <Compile Include="ViewModel\HomepageViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
-    <Compile Include="ViewModel\VaccineViewModel.cs" />
-    <Compile Include="View\VaccineView.xaml.cs">
-      <DependentUpon>VaccineView.xaml</DependentUpon>
+    <Compile Include="ViewModel\ChildVaccineViewModel.cs" />
+    <Compile Include="View\ChildVaccine.xaml.cs">
+      <DependentUpon>ChildVaccine.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\HomepageControl.xaml.cs">
       <DependentUpon>HomepageControl.xaml</DependentUpon>
@@ -128,7 +132,7 @@
     <Compile Include="View\ChildRecordForm.xaml.cs">
       <DependentUpon>ChildRecordForm.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\VaccineView.xaml">
+    <Page Include="View\ChildVaccine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,6 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Databse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Login1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace KidsVaccineReminder.Repositories
 {
-    public class Repository<T> : IRepository<T> where T:class
+    public class Repository<T> : IRepository<T> where T : class
     {
         private AppDbContext _context;
         private DbSet<T> _entity = null;
@@ -20,12 +20,17 @@ namespace KidsVaccineReminder.Repositories
         }
         public void Delete(T obj)
         {
-            throw new NotImplementedException();
+            _entity.Remove(obj);
         }
 
         public async Task<T> Get(Expression<Func<T, bool>> predicate)
         {
             return await _entity.FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<List<T>> GetByCriteria(Expression<Func<T, bool>> predicate)
+        {
+            return await _entity.Where(predicate).ToListAsync();
         }
 
         public async Task<List<T>> GetAll()
@@ -44,9 +49,9 @@ namespace KidsVaccineReminder.Repositories
             _context.Entry(obj).State = EntityState.Modified;
         }
 
-        public async void Save()
+        public int Save()
         {
-           await _context.SaveChangesAsync();
+            return _context.SaveChanges();
         }
     }
 }
