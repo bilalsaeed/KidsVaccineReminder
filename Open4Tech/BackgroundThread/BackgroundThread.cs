@@ -1,4 +1,6 @@
 ﻿using KidsVaccineReminder.DatabaseContext;
+using KidsVaccineReminder.DTO;
+using KidsVaccineReminder.SMSSenders;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -37,6 +39,13 @@ namespace KidsVaccineReminder.BackgroundThread
                             NextVaccincationDate = vaccine.NextVaccincationDate.Value,
                             VaccinationDay = vaccine.NextVaccincationDate.Value
                         }).ToList();
+
+            var sendSmsList = repo.Select(item => new SendSMSRequestModel()
+            {
+                message = $"Your vaccine is due on {item.NextVaccincationDate.ToString("d")}",
+                phone_number = item.FatherPhoneNumber
+            }).ToList();
+            SMSGatewayME.SendSMS(sendSmsList);
         }
     }
 }
