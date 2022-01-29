@@ -61,29 +61,29 @@ namespace KidsVaccineReminder.ViewModel
 
         private void SaveChildRecord()
         {
-            //if (!this.ChildRecord.IsAnyNullOrEmpty())
-            //{
-            var childRepo = new ChildRepository(this._context);
-            if (this.ChildRecord.Id == 0)
-                childRepo.Add(this.ChildRecord);
-            else
-                childRepo.Update(this.ChildRecord);
-            childRepo.Save();
+            if (!this.ChildRecord.IsAnyNullOrEmpty())
+            {
+                var childRepo = new ChildRepository(this._context);
+                if (this.ChildRecord.Id == 0)
+                    childRepo.Add(this.ChildRecord);
+                else
+                    childRepo.Update(this.ChildRecord);
+                childRepo.Save();
 
-            DialogResult dialogResult = MessageBox.Show("Do you want to add another record?", "Add a new child record", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                ChildRecord = new ChildRecord();
+                DialogResult dialogResult = MessageBox.Show("Do you want to add another record?", "Add a new child record", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    ChildRecord = new ChildRecord();
+                }
+                else
+                {
+                    GoHome(window);
+                }
             }
             else
             {
-                GoHome(window);
+                MessageBox.Show("Please fill complete form!");
             }
-            //}
-            //else
-            // {
-            //     MessageBox.Show("Please fill complete form!");
-            //  }
         }
     }
 }

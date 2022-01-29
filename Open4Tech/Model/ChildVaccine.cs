@@ -18,5 +18,6 @@ namespace KidsVaccineReminder.Model
         public DateTime? NextVaccincationDate { get; set; }
         public string DoctorName { get; set; }
         public int ChildRecordId { get; set; }
+        public int Vaccinated { get; set; } = 0;
     }
 }

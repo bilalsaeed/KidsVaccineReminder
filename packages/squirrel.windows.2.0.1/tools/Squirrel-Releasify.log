@@ -1,0 +1,54 @@
+﻿[28/01/22 10:05:05] info: Program: Starting Squirrel Updater: --releasify KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:05:05] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[28/01/22 10:05:05] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\bin\Release\Releases\KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:05:05] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\bin\Release\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\bin\Release\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[28/01/22 10:05:06] info: ReleasePackage: Extracting dependent packages: []
+[28/01/22 10:05:06] info: ReleasePackage: Removing unnecessary data
+[28/01/22 10:05:06] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[28/01/22 10:05:08] info: Program: Building embedded zip file for Setup.exe
+[28/01/22 10:05:16] info: Program: Finished Squirrel Updater
+[28/01/22 10:16:29] info: Program: Starting Squirrel Updater: --releasify bin\x86\Release\KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:16:29] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[28/01/22 10:16:29] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:16:29] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[28/01/22 10:16:30] info: ReleasePackage: Extracting dependent packages: []
+[28/01/22 10:16:30] info: ReleasePackage: Removing unnecessary data
+[28/01/22 10:16:30] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[28/01/22 10:16:31] info: Program: Building embedded zip file for Setup.exe
+[28/01/22 10:16:38] info: Program: Finished Squirrel Updater
+[28/01/22 10:24:34] info: Program: Starting Squirrel Updater: --releasify bin\x86\Release\KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:24:34] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[28/01/22 10:24:34] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg
+[28/01/22 10:24:34] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[28/01/22 10:24:35] info: ReleasePackage: Extracting dependent packages: []
+[28/01/22 10:24:35] info: ReleasePackage: Removing unnecessary data
+[28/01/22 10:24:35] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[28/01/22 10:24:36] info: Program: Building embedded zip file for Setup.exe
+[28/01/22 10:24:43] info: Program: Finished Squirrel Updater
+[29/01/22 11:26:18] info: Program: Starting Squirrel Updater: --releasify bin\Release\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 11:26:18] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[29/01/22 11:26:18] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 11:26:18] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[29/01/22 11:26:18] info: ReleasePackage: Extracting dependent packages: []
+[29/01/22 11:26:18] info: ReleasePackage: Removing unnecessary data
+[29/01/22 11:26:18] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[29/01/22 11:26:20] info: Program: Building embedded zip file for Setup.exe
+[29/01/22 11:26:27] info: Program: Finished Squirrel Updater
+[29/01/22 11:37:45] info: Program: Starting Squirrel Updater: --releasify bin\Release\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 11:37:45] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[29/01/22 11:37:45] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 11:37:45] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[29/01/22 11:37:45] info: ReleasePackage: Extracting dependent packages: []
+[29/01/22 11:37:45] info: ReleasePackage: Removing unnecessary data
+[29/01/22 11:37:45] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[29/01/22 11:37:47] info: Program: Building embedded zip file for Setup.exe
+[29/01/22 11:37:54] info: Program: Finished Squirrel Updater
+[29/01/22 12:05:10] info: Program: Starting Squirrel Updater: --releasify bin\Release\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 12:05:10] info: Program: Bootstrapper EXE found at:C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[29/01/22 12:05:10] info: Program: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg
+[29/01/22 12:05:11] info: ReleasePackage: Creating release package: C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder.1.0.0.nupkg => C:\Users\DELL\Downloads\Compressed\Login-Open4Tech-master\Login-Open4Tech-master\Open4Tech\Releases\KidsVaccineReminder-1.0.0-full.nupkg
+[29/01/22 12:05:11] info: ReleasePackage: Extracting dependent packages: []
+[29/01/22 12:05:11] info: ReleasePackage: Removing unnecessary data
+[29/01/22 12:05:11] info: ReleasePackage: No release notes found in C:\Users\DELL\AppData\Local\SquirrelTemp\tempa\KidsVaccineReminder.nuspec
+[29/01/22 12:05:13] info: Program: Building embedded zip file for Setup.exe
+[29/01/22 12:05:21] info: Program: Finished Squirrel Updater
